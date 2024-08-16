@@ -1,0 +1,46 @@
+.rightside-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 694px;
+  width: 100%;
+  background-color: white;
+  padding: 40px 50px;
+
+  &__close {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 485px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    color: var(--title-color);
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+
+  &__images{
+    width: 100%;
+  }
+}
