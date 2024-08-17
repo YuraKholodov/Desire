@@ -10,6 +10,8 @@ body {
   font-weight: 400;
   color: var(--text-color);
   background-color: var(--general-light-bg);
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .wrapper {
