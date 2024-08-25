@@ -3,9 +3,13 @@
 @import "base/global";
 @import "base/vars";
 @import "base/mixins";
+@import "base/text";
+
+@import "components/icons";
+@import "components/collection";
 
 @import "components/header";
 @import "components/footer";
 @import "components/rightside-menu";
 @import "components/top";
-@import "components/icons";
+@import "components/new-collection";

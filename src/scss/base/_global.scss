@@ -34,6 +34,12 @@ body {
   padding: 0 15px;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .swiper-pagination-bullet {
   width: 8px !important;
   height: 8px !important;
@@ -41,7 +47,7 @@ body {
   opacity: 1 !important;
   margin: 0 15px !important;
 
-  &-active{
+  &-active {
     background: rgb(255, 239, 53) !important;
   }
 }
