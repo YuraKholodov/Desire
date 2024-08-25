@@ -9,12 +9,16 @@ const sourceMaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const webpack = require('webpack-stream');
-const babel = require('gulp-babel');
-const imagemin = require('gulp-imagemin');
+// const babel = require('gulp-babel');
 const changed = require('gulp-changed');
 const typograf = require('gulp-typograf');
 const svgsprite = require('gulp-svg-sprite');
 const replace = require('gulp-replace');
+
+// Images
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const avif = require("gulp-avif");
 
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {
@@ -83,14 +87,39 @@ gulp.task('sass:dev', function () {
 		.pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('images:dev', function () {
-	return (
-		gulp
-			.src(['./src/img/**/*'])
-			.pipe(changed('./build/img/'))
-			// .pipe(imagemin({ verbose: true }))
-			.pipe(gulp.dest('./build/img/'))
-	);
+// gulp.task('images:dev', function () {
+// 	return (
+// 		gulp
+// 			.src(['./src/img/**/*'])
+// 			.pipe(changed('./build/img/'))
+// 			// .pipe(imagemin({ verbose: true }))
+// 			.pipe(gulp.dest('./build/img/'))
+// 	);
+// });
+
+gulp.task("images:dev", function () {
+  return gulp
+    .src("./src/img/**/*.{png,jpg,jpeg}")
+    .pipe(changed("./build/img/"))
+    .pipe(avif())
+
+    .pipe(gulp.src("./src/img/**/*", "!./src/img/**/*.svg"))
+    .pipe(changed("./build/img/"))
+    .pipe(webp())
+
+    .pipe(gulp.src("./src/img/**/*", "!./src/img/**/*.svg"))
+    .pipe(changed("./build/img/"))
+    .pipe(
+      imagemin(
+        [
+          imagemin.gifsicle({ interlaced: true }),
+          imagemin.mozjpeg({ quality: 85, progressive: true }),
+          imagemin.optipng({ optimizationLevel: 5 }),
+        ],
+        { verbose: true }
+      )
+    )
+    .pipe(gulp.dest("./build/img/"));
 });
 
 const svgStack = {

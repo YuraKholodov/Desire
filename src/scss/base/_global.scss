@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  font-family: 'OpenSans', sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
@@ -32,4 +32,16 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: rgb(54, 56, 56) !important;
+  opacity: 1 !important;
+  margin: 0 15px !important;
+
+  &-active{
+    background: rgb(255, 239, 53) !important;
+  }
 }
