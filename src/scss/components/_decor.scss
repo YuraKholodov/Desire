@@ -1,0 +1,32 @@
+.decor {
+  position: relative;
+  padding: 170px 0 155px;
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    position: relative;
+    max-width: 540px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      border-radius: 0.5px;
+      background: rgb(109, 114, 120);
+    }
+  }
+  &__text {
+    max-width: 540px;
+  }
+}

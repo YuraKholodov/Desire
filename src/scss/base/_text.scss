@@ -1,4 +1,14 @@
 .title {
+  
+  &-big {
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0px;
+  }
+
   &-medium {
     color: var(--title-color);
     font-family: Montserrat;
