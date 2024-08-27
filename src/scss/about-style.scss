@@ -4,16 +4,10 @@
 @import "base/vars";
 @import "base/mixins";
 @import "base/text";
-
 @import "components/icons";
-@import "components/collection";
 
 @import "components/header";
 @import "components/footer";
 @import "components/rightside-menu";
-@import "components/top";
-@import "components/new-collection";
-@import "components/decor";
-@import "components/works-path";
-@import "components/gallery";
-@import "components/blog-box";
+@import "components/breadcrumbs";
+@import "components/about/about";

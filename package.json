@@ -4,6 +4,7 @@
     "@babel/preset-env": "^7.22.5",
     "avif-webp-checker": "^1.0.0",
     "css-loader": "^6.8.1",
+    "fslightbox": "^3.4.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",

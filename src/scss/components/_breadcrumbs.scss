@@ -1,0 +1,26 @@
+.breadcrumbs {
+  background: rgba(223, 223, 223, 0.5);
+  padding: 14px 0;
+  margin-bottom: -53px;
+
+  color: var(--text-color);
+  font-size: 14px;
+
+  &--bg-transparent {
+    background: transparent;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(&:last-child) {
+      &::after {
+        content: "/";
+        margin-left: -4px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
