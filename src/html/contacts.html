@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contacts-style.css" />
+    <title>Contacts</title>
+  </head>
+  <body class="link-contacts-active">
+    <div class="wrapper">
+      @@include('./blocks/header.html')
+
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="./../index.html"> Home </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        @@include('./blocks/contacts/map.html')
+        @@include('./blocks/contacts/contacts.html')
+      </main>
+
+      @@include('./blocks/footer.html')
+    </div>
+
+    @@include('./blocks/rightside-menu.html')
+    <script src="js/contacts.bundle.js"></script>
+  </body>
+</html>

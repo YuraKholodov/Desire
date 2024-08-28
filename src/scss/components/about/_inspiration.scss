@@ -33,14 +33,7 @@
     padding-bottom: 15px;
     margin-bottom: 25px;
     &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 200px;
-      height: 2px;
-      border-radius: 1px;
-      background-color: rgb(109, 114, 120);
+      @include bottom-line;
     }
   }
 
@@ -53,10 +46,9 @@
     flex-direction: column;
     gap: 34px;
 
+    @include title-font;
     color: var(--title-color);
-    font-family: Montserrat;
     font-size: 16px;
-    font-weight: 700;
     line-height: 23px;
     letter-spacing: 0px;
   }

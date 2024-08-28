@@ -16,14 +16,7 @@
     padding-bottom: 22px;
     margin-bottom: 22px;
     &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 200px;
-      height: 1px;
-      border-radius: 0.5px;
-      background: rgb(109, 114, 120);
+      @include bottom-line;
     }
   }
   &__text {

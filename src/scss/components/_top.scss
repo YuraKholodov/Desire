@@ -35,23 +35,17 @@
     }
 
     &-title {
+      @include title-font;
       position: relative;
-      color: var(--title-color);
       font-size: 110px;
-      font-weight: 700;
       line-height: 134px;
       letter-spacing: 0px;
       margin-bottom: 26px;
       padding-bottom: 26px;
 
       &::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 0;
+        @include bottom-line;
         width: 185px;
-        height: 1px;
-        background: rgb(109, 114, 120);
       }
     }
 

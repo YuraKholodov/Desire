@@ -1,9 +1,11 @@
 .breadcrumbs {
+  position: relative;
   background: rgba(223, 223, 223, 0.5);
   padding: 14px 0;
   margin-bottom: -53px;
   color: var(--text-color);
   font-size: 14px;
+  z-index: 10;
 
   &--bg-transparent {
     background: transparent;
