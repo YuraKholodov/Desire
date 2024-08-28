@@ -1,0 +1,17 @@
+.partners {
+  padding: 16px 0 60px;
+
+  & .container-fluid {
+    padding: 0 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 68px;
+  }
+
+  &__item > img {
+    width: 100%;
+  }
+}

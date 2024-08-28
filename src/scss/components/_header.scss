@@ -22,23 +22,10 @@
     gap: 0 80px;
 
     &-link {
+      position: relative;
       @include title-font;
       color: rgba(54, 56, 56, 0.9);
-    }
-
-    &-link--active {
-      position: relative;
       padding-bottom: 4px;
-      &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        border-radius: 1px;
-        background: rgba(54, 56, 56, 0.7);
-      }
     }
   }
 }
@@ -47,4 +34,30 @@
   padding: 0 15px;
   margin: 0 auto;
   flex-shrink: 0;
+}
+
+.link-about-active {
+  .menu__list-link--about::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(54, 56, 56, 0.7);
+  }
+}
+
+.link-gallery-active {
+  .menu__list-link--gallery::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(54, 56, 56, 0.7);
+  }
 }
