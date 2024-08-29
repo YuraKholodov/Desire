@@ -82,26 +82,26 @@ gulp.task("fontsStyle", () => {
             ? fontFileName.split("-")[0]
             : fontFileName;
           let fontWeight = fontFileName.split("-")[1]
-            ? fontFileName.split("-")[1]
-            : fontFileName;
-          if (fontWeight.toLowerCase() === "thin") {
+            ? fontFileName.split("-")[1].toLowerCase()
+            : fontFileName.toLowerCase();
+          if (fontWeight.includes("thin")) {
             fontWeight = 100;
-          } else if (fontWeight.toLowerCase() === "extralight") {
+          } else if (fontWeight.includes("extralight")) {
             fontWeight = 200;
-          } else if (fontWeight.toLowerCase() === "light") {
+          } else if (fontWeight.includes("light")) {
             fontWeight = 300;
-          } else if (fontWeight.toLowerCase() === "medium") {
+          } else if (fontWeight.includes("medium")) {
             fontWeight = 500;
-          } else if (fontWeight.toLowerCase() === "semibold") {
+          } else if (fontWeight.includes("semibold")) {
             fontWeight = 600;
-          } else if (fontWeight.toLowerCase() === "bold") {
+          } else if (fontWeight.includes("bold")) {
             fontWeight = 700;
           } else if (
-            fontWeight.toLowerCase() === "extrabold" ||
-            fontWeight.toLowerCase() === "heavy"
+            fontWeight.includes("extrabold") ||
+            fontWeight.includes("heavy")
           ) {
             fontWeight = 800;
-          } else if (fontWeight.toLowerCase() === "black") {
+          } else if (fontWeight.includes("black")) {
             fontWeight = 900;
           } else {
             fontWeight = 400;

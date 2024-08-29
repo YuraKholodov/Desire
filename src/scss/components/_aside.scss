@@ -1,0 +1,131 @@
+.aside {
+  max-width: 350px;
+
+  &__search {
+    position: relative;
+    margin-bottom: 44px;
+  }
+
+  &__search-input {
+    padding: 6px 45px 6px 18px;
+    border: var(--form-border);
+    border-radius: 20px;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--form-placeholder-color);
+      font-family: OpenSans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__search-btn {
+    position: absolute;
+    top: 9px;
+    right: 19px;
+  }
+
+  &__category {
+    margin-bottom: 36px;
+
+    &-title {
+      @include title-font;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0px;
+      margin-bottom: 24px;
+    }
+
+    &-item {
+      margin-bottom: 12px;
+    }
+
+    &-link {
+      color: var(--text-color);
+    }
+  }
+
+  &__recent-posts {
+    &-title {
+      @include title-font;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0px;
+      margin-bottom: 24px;
+    }
+
+    &-item {
+      margin-bottom: 12px;
+
+      &-title {
+        display: block;
+        color: var(--text-color);
+      }
+
+      &-date,
+      &-author {
+        color: rgb(161, 161, 161);
+        font-family: OpenSans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+      }
+    }
+  }
+
+  &__tags {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    &-title {
+      @include title-font;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0px;
+      margin-bottom: 24px;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &-link {
+      display: block;
+      padding: 0 16px;
+      border: 1px solid rgba(69, 70, 71, 0.5);
+      border-radius: 14px;
+
+      color: rgb(143, 141, 141);
+      font-family: OpenSans;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+
+  &__social {
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-item {
+      width: 16px;
+      height: 18px;
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
