@@ -1,15 +1,15 @@
-@mixin title-font {
+@mixin title-font($opacity:1) {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: var(--title-color);
+  color: rgba(54, 56, 56, $opacity);
 }
 
-@mixin bottom-line {
+@mixin bottom-line($width:200px) {
   position: absolute;
   content: "";
   bottom: 0;
   left: 0;
-  width: 200px;
+  width: $width;
   height: 2px;
   background-color: rgb(109, 114, 120);
 }

@@ -2,10 +2,69 @@
   padding-bottom: 100px;
   &__title {
     position: relative;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     margin-bottom: 35px;
     &::after {
       @include bottom-line;
+    }
+  }
+
+  &__descr {
+    padding-left: 285px;
+  }
+
+  &__social {
+    &-list {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 19px;
+
+      & img {
+        width: 28px;
+        height: 18px;
+      }
+    }
+  }
+
+  &__text {
+    color: rgb(161, 161, 161);
+    margin-bottom: 10px;
+  }
+
+  &__address {
+    &-email {
+      margin-top: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-input {
+      padding: 6px 17px;
+      width: 49%;
+      max-width: 407px;
+      border: var(--form-border);
+      border-radius: 20px;
+      margin-bottom: 13px;
+      &::placeholder {
+        color: var(--form-placeholder-color);
+      }
+    }
+
+    &-area {
+      padding: 14px 17px;
+      width: 100%;
+      border: var(--form-border);
+      border-radius: 20px;
+      min-height: 125px;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        color: var(--form-placeholder-color);
+      }
     }
   }
 }
