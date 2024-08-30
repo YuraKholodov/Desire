@@ -23,10 +23,16 @@
             </ul>
           </div>
         </div>
-        @@include('./blocks/blog/blog.html')
-        
+        <section class="blog">
+          <div class="container">
+            <div class="blog__inner">
+              @@include('./blocks/blog/blog-items.html') 
+              @@include('./blocks/aside.html') 
+            </div>
+          </div>
+        </section>
       </main>
-
+      
       @@include('./blocks/footer.html')
     </div>
 

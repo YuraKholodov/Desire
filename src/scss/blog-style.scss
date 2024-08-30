@@ -1,6 +1,6 @@
 @import "base/reset";
 @import "base/vars";
-@import "base/fonts";
+@import "base/fontsAutoGen";
 @import "base/text";
 @import "base/mixins";
 @import "base/global";
@@ -12,3 +12,4 @@
 @import "components/aside";
 @import "components/blog/swiper";
 @import "components/blog/blog";
+@import "components/blog/blog-items";

@@ -13,3 +13,25 @@
   color: #fff !important;
   background: #007aff !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000 !important;
+}
+
+.swiper-button-next:after {
+  content: url("./../../../img/svgicons/next-arrow.svg") !important;
+}
+
+.swiper-button-prev:after {
+  content: url("./../../../img/svgicons/prev-arrow.svg") !important;
+}
+
+.article-slider__internal {
+  margin-bottom: 25px;
+}
+
+.blog__item-external-swiper-pagination{
+  position: static !important;
+  margin-top: 50px;
+}
