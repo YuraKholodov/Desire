@@ -22,10 +22,15 @@ new Swiper(".blog__item-external-swiper", {
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".external-swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
+  },
+
+  navigation: {
+    nextEl: '.external-swiper-button-next',
+    prevEl: '.external-swiper-button-prev',
   },
 });

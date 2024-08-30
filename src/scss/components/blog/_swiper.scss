@@ -11,7 +11,7 @@
 
 .swiper-pagination-bullet-active {
   color: #fff !important;
-  background: #007aff !important;
+  background: #000 !important;
 }
 
 .swiper-button-prev,
@@ -31,7 +31,21 @@
   margin-bottom: 25px;
 }
 
-.blog__item-external-swiper-pagination{
-  position: static !important;
+.external-swiper__pagination-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
+}
+
+.external-swiper-pagination {
+  position: static !important;
+  width: unset !important;
+  margin-top: -6px;
+}
+
+.external-swiper-button-prev,
+.external-swiper-button-next {
+  position: static !important;
+  height: unset !important;
 }
