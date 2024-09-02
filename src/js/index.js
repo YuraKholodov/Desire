@@ -22,8 +22,13 @@ export const swiper = new Swiper(".top__slider", {
 });
 
 import mixitup from "mixitup";
-const mixer = mixitup(".gallery__inner", {
-  load: {
-    filter: ".category-living",
-  },
-});
+if (document.querySelector(".gallery__inner")) {
+  const mixer = mixitup(".gallery__inner", {
+    load: {
+      filter: ".category-living",
+    },
+  });
+}
+
+import { worksPath } from "./modules/works-path";
+worksPath();
