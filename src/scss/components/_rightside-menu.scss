@@ -12,6 +12,7 @@
   z-index: 10;
   &.rightside-menu--close {
     transform: translateX(500%);
+    visibility: hidden;
   }
 
   &__close {

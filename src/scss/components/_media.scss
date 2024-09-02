@@ -1,0 +1,184 @@
+@media (max-width: 1366px) {
+  .collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .top {
+    &__slider {
+      &-title {
+        font-size: 62px;
+        line-height: 74px;
+      }
+      &-img {
+        height: 640px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__info {
+      width: 380px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .top {
+    &__slider {
+      &-title {
+        font-size: 44px;
+        line-height: 54px;
+      }
+      &-img {
+        height: 540px;
+      }
+    }
+  }
+
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+
+  .menu__list {
+    gap: 0 40px;
+  }
+
+  .decor {
+    padding: 70px 0 55px;
+  }
+
+  // Footer
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__info {
+      width: 100%;
+      max-width: unset;
+      margin-bottom: 50px;
+
+      &-text {
+        max-width: 100%;
+      }
+    }
+
+    &__social {
+      margin-left: auto;
+    }
+
+    &__menu {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .top {
+    &__inner {
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+
+    &__slider {
+      &-item {
+        margin-left: unset;
+        padding-bottom: 30px;
+      }
+      &-img {
+        display: none;
+      }
+
+      &-text {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+      padding-top: 42px;
+    }
+  }
+
+  .logo {
+    order: -1;
+    margin: unset;
+    padding: unset;
+    position: relative;
+    z-index: 12;
+  }
+
+  .menu {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    transform: translateY(-350px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    &--open {
+      transform: translateY(30px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .menu__list {
+    display: block;
+    text-align: center;
+
+    &-link {
+      display: block;
+      padding: 20px 0;
+    }
+  }
+
+  .header__btn-menu {
+    display: block;
+    order: -1;
+    position: relative;
+    z-index: 12;
+  }
+
+  .collection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    &__form {
+      display: block;
+
+      &-button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    &__social {
+      margin-left: 0;
+    }
+
+    &__menu {
+      margin-right: 0;
+    }
+  }
+}

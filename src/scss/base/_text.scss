@@ -15,6 +15,11 @@
     font-weight: 700;
     line-height: 51px;
     letter-spacing: 0px;
+
+    @media (max-width: 540px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 
   &-little {

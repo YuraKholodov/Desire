@@ -1,6 +1,9 @@
 import { rightside_menu } from "./modules/rightside-menu";
 rightside_menu();
 
+import { mobileMenu } from "./modules/mobile-menu";
+mobileMenu();
+
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 export const swiper = new Swiper(".contacts-slider__swiper", {

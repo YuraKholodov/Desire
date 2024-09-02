@@ -1,10 +1,10 @@
 .header {
-  padding: 45px 0;
-
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0 40px;
+    height: 120px;
   }
 
   &__btn {
@@ -12,6 +12,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &-menu {
+      display: none;
+    }
   }
 }
 
@@ -34,6 +38,11 @@
   padding: 0 15px;
   margin: 0 auto;
   flex-shrink: 0;
+  width: 125px;
+
+  & img {
+    width: 100%;
+  }
 }
 
 .link-about-active {
