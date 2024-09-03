@@ -49,3 +49,9 @@
   position: static !important;
   height: unset !important;
 }
+
+.swiper-slide {
+  img {
+    width: 100%;
+  }
+}
